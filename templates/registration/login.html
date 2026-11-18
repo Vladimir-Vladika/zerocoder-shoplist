@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<div class="form-wrap"><p class="eyebrow">РАДЫ ВИДЕТЬ ВАС СНОВА</p><h1 class="h2 fw-bold mb-4">Вход</h1><form method="post" class="simple-form">{% csrf_token %}{{ form.as_p }}<button class="btn btn-dark">Войти</button></form><p class="mt-4">Нет аккаунта? <a href="{% url 'register' %}">Зарегистрироваться</a></p></div>{% endblock %}
